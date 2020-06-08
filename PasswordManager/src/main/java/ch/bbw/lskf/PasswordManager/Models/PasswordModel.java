@@ -5,6 +5,7 @@ public class PasswordModel {
     private String url;
     private String password;
     private String category;
+    private String notes;
     public PasswordModel(String email, String url, String password, String notes, String category){
         this.email = email;
         this.url = url;
