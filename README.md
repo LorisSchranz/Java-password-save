@@ -1,3 +1,7 @@
-This project is a password manager
-Made by Loris Schranz & Kevin Fronzeck
-        
+*Modul 183 - Password Safe*
+
+A project by Kevin Fronzeck and Loris Schranz
+
+Documentation:
+
+Info:
