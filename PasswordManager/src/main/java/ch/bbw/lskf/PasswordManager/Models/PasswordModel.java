@@ -5,10 +5,11 @@ public class PasswordModel {
     private String url;
     private String password;
     private String category;
-    public PasswordModel(String email, String url, String password, String category){
+    public PasswordModel(String email, String url, String password, String notes, String category){
         this.email = email;
         this.url = url;
         this.password = password;
+        this.notes = notes;
         this.category = category;
     }
 
@@ -34,6 +35,14 @@ public class PasswordModel {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
     public String getCategory() {
