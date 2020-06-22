@@ -74,3 +74,12 @@ public static String decrypt(String text, String privateKey){
 
     return null;
 }
+
+
+public static String writeInDB(String encryptedText){
+
+}
+
+public static readFromDB(String encryptedText){
+
+}
