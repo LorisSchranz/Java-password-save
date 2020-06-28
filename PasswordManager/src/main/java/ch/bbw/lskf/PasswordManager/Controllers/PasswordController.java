@@ -1,5 +1,5 @@
 /*The Controller of the application*/
-
+/*
 
 //TODO: Hash Function, Save Function, Load Function,
 
@@ -40,7 +40,7 @@ System.out.println(decrypt(encryptedText, privateKey));
 /*
 for(every db
 
- */
+
 
 
 public static String encrypt(String text, String publicKey){
@@ -83,3 +83,4 @@ public static String writeInDB(String encryptedText){
 public static readFromDB(String encryptedText){
 
 }
+*/

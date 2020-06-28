@@ -1,6 +1,6 @@
 package ch.bbw.lskf.PasswordManager.Models;
 
-public class PasswordModel {
+public class User {
     private String username;
     private String password;
 
