@@ -11,9 +11,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 
+//TODO: encrypting + decrypting Functions
+
 @Controller
 public class MainController {
 private ArrayList<Password> passwords = new ArrayList<>();
+
+    // Login
     @GetMapping("/")
     public String index(@RequestParam(name = "name", required = false, defaultValue = "World") String login, Model model, User user) {
         model.addAttribute("login", login);
@@ -23,6 +27,7 @@ private ArrayList<Password> passwords = new ArrayList<>();
 
     @PostMapping("/login")
     public String login(Model model, @ModelAttribute User user, Password password){
+        //TODO: check login
         if (user.getUsername().equals("Admin")){
             //TODO: json file with all passwords
         }
@@ -36,6 +41,9 @@ private ArrayList<Password> passwords = new ArrayList<>();
         return "password";
     }
 
+    // Logout
+
+    // Creating Entries
     @GetMapping("/newEntry")
     public String entry(Model model, Password password) {
         model.addAttribute("password", password);
@@ -48,5 +56,9 @@ private ArrayList<Password> passwords = new ArrayList<>();
         model.addAttribute("passwords", passwords);
         return "password";
     }
+
+    // Editing Entries
+
+    // Delete Entries
 
 }
