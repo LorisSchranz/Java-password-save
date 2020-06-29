@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>New entry</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="container">
@@ -11,21 +11,21 @@
         <form name='form' action="#" th:action="@{/createEntry}" th:object="${password}" method='POST'>
             <table>
                 <tr>
-                    <td>Url:</td>
-                    <td><label>
-                        <input type='text' name='url' value='' th:field="*{url}"/>
-                    </label></td>
-                </tr>
-                <tr>
                     <td>Email:</td>
                     <td><label>
                         <input type='text' name='email' value='' th:field="*{email}"/>
                     </label></td>
                 </tr>
                 <tr>
+                    <td>Url:</td>
+                    <td><label>
+                        <input type='text' name='url' value='' th:field="*{url}"/>
+                    </label></td>
+                </tr>
+                <tr>
                     <td>Value:</td>
                     <td><label>
-                        <input type='text' name='value' value='' th:field="*{value}"/>
+                        <input type='password' name='value' value='' th:field="*{value}"/>
                     </label></td>
                 </tr>
                 <tr>
