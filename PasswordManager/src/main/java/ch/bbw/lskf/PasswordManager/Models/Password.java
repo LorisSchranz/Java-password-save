@@ -6,7 +6,12 @@ public class Password {
     private String value;
     private String category;
     private String notes;
-    public Password(String email, String url, String value, String notes, String category){
+
+    public Password() {
+        this("", "", "", "", "");
+    }
+
+    public Password(String email, String url, String value, String notes, String category) {
         this.email = email;
         this.url = url;
         this.value = value;

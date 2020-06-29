@@ -2,6 +2,7 @@ package ch.bbw.lskf.PasswordManager.Controllers;
 
 import ch.bbw.lskf.PasswordManager.Models.Password;
 import ch.bbw.lskf.PasswordManager.Models.User;
+import ch.bbw.lskf.PasswordManager.Services.FileService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,6 +30,7 @@ private ArrayList<Password> passwords = new ArrayList<>();
     public String login(Model model, @ModelAttribute User user, Password password){
         //TODO: check login
         if (user.getUsername().equals("Admin")){
+            FileService.writeFile();
             //TODO: json file with all passwords
         }
         model.addAttribute("passwords", passwords);
@@ -60,5 +62,4 @@ private ArrayList<Password> passwords = new ArrayList<>();
     // Editing Entries
 
     // Delete Entries
-
 }
