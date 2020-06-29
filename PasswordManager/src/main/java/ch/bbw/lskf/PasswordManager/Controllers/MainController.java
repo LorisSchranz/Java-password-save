@@ -1,4 +1,4 @@
-package ch.bbw.lskf.PasswordManager.Controllers;
+   package ch.bbw.lskf.PasswordManager.Controllers;
 
 import ch.bbw.lskf.PasswordManager.Models.Password;
 import ch.bbw.lskf.PasswordManager.Models.User;

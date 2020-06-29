@@ -36,26 +36,47 @@ tr{
     background-color: #f7f7f7;
 }
 
-.container{
-    width: 75%;
-    margin: 0 auto;
-    justify-content: center;
-}
 
 .container h1{
     text-align: center;
 }
 
-.container-form{
-    margin: 0 auto;
-    width: 25%;
-    border: 1px solid darkgrey;
-    justify-content: center;
+
+
+@media (min-width: 1080px) {
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .container-form{
+        margin: 0 auto;
+        width: 25%;
+        border: 1px solid darkgrey;
+        justify-content: center;
+    }
+
+    .container-form input{
+        width: 100%;
+    }
 }
 
-.container-form input{
-    width: 100%;
+@media (max-width: 1080px) {
+
+    .container-form{
+        margin: 0 auto;
+        width: 50%;
+        border: 1px solid darkgrey;
+        justify-content: center;
+    }
+
+    .container-form input{
+        width: 100%;
+    }
 }
+
 
 .submitButton{
     background-color: white;
