@@ -1,22 +1,24 @@
 package ch.bbw.lskf.PasswordManager.Models;
 
 public class Password {
-    private String email;
     private String url;
+    private String email;
     private String value;
-    private String category;
     private String notes;
+    private String category;
+    private int id;
 
     public Password() {
-        this("", "", "", "", "");
+        this("", "", "", "", "", 0);
     }
 
-    public Password(String email, String url, String value, String notes, String category) {
-        this.email = email;
+    public Password(String url, String email, String value, String notes, String category, int id) {
         this.url = url;
+        this.email = email;
         this.value = value;
         this.notes = notes;
         this.category = category;
+        this.id = id;
     }
 
     public String getEmail() {
@@ -57,5 +59,13 @@ public class Password {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

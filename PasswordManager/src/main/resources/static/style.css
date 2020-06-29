@@ -28,6 +28,10 @@ tr{
     border: 1px solid black;
 }
 
+td{
+    text-align: center;
+}
+
 .blue{
     background-color: cadetblue;
 }
