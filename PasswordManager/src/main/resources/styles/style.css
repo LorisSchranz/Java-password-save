@@ -1,0 +1,64 @@
+*{
+    font-family: "Arial";
+}
+
+.button{
+
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+th{
+    /*border: 1px solid black;*/
+    width: 300px;
+}
+
+.rounded-right{
+    border-top-right-radius: 40px;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+.blue{
+    background-color: cadetblue;
+}
+
+.white{
+    background-color: #f7f7f7;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container-form{
+    margin: 0 auto;
+    width: 25%;
+    border: 1px solid darkgrey;
+    justify-content: center;
+}
+
+.container-form input{
+    width: 100%;
+}
+
+.submitButton{
+    background-color: white;
+    color: black;
+}
+
