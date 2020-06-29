@@ -1,5 +1,5 @@
 /*The Controller of the application*/
-/*
+
 
 //TODO: Hash Function, Save Function, Load Function,
 
@@ -31,18 +31,10 @@ static String publicKey = "-----BEGIN PUBLIC KEY-----\n" +
 
 
 //ToDo: Replace with Save in DB/Load encrypted texts from DB function
-String encryptedText = encrypt("Hello World", publicKey);
+String encryptedText = encrypt("Password", publicKey);
 
 //Just for testing purposes
 System.out.println(encryptedText);
-//Decrypt for writing it in the GUI --> Needs a for loop
-System.out.println(decrypt(encryptedText, privateKey));
-/*
-for(every db
-
-
-
-
 public static String encrypt(String text, String publicKey){
     try {
         RSAPublicKey publicKey1 = RSAHelper.getPublicKeyFromString(publicKey);
@@ -75,12 +67,21 @@ public static String decrypt(String text, String privateKey){
     return null;
 }
 
+//Don't work because no file reader
+////Function to write the data encrypted in DB
+//public static String writeInDB(Password password){
+//    //only encrypt if not empty
+//    if(password != null || password != ''){
+//        encrypt(password, publicKey);
+//    }
+//
+//}
+////Function to read data out of DB and decrypt it
+//public static readFromDB(String encryptedText){
+//    //getting a list from the passwords
+//    for(passwords : passwordList){
+//        decrypt(this.password, publicKey)
+//    }
+//}
 
-public static String writeInDB(String encryptedText){
 
-}
-
-public static readFromDB(String encryptedText){
-
-}
-*/

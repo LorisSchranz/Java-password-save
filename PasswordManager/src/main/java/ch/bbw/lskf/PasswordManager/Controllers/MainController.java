@@ -16,6 +16,7 @@ import java.util.ArrayList;
 @Controller
 public class MainController {
 private ArrayList<Password> passwords = new ArrayList<>();
+public PasswordController  passwordController = new PasswordController();
 
     // Login
     @GetMapping("/")
@@ -47,6 +48,7 @@ private ArrayList<Password> passwords = new ArrayList<>();
     @GetMapping("/newEntry")
     public String entry(Model model, Password password) {
         model.addAttribute("password", password);
+        passwordController.writeInDB(password);
         return "newEntry";
     }
 
@@ -54,6 +56,7 @@ private ArrayList<Password> passwords = new ArrayList<>();
     public String newEntry(Model model, @ModelAttribute Password password) {
         passwords.add(password);
         model.addAttribute("passwords", passwords);
+        passwordController.writeInDB(password);
         return "password";
     }
 
